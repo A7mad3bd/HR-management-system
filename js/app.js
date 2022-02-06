@@ -1,5 +1,4 @@
 'use strict';
-const tableCell = document.getElementById("tablecellid");
 let employeeForm = document.getElementById('employeeForm');
 let employeeSection = document.getElementById('employee');
 let div = document.createElement('div');
@@ -25,7 +24,8 @@ function Person(Nameemp, Department, Level, image) {
 }
 
 function render(employeesFromLS) {
-    employeeSection.innerHTML = '';
+  employeeSection.innerHTML = '';
+
     for (let i = 0; i < employeesFromLS.length; i++) {
 
         let image = document.createElement('img');
@@ -54,36 +54,6 @@ function render(employeesFromLS) {
 
 
 
-///
-
-// Render each department information in a table:
-// Department Name
-// Number of employees in each department.
-// Average salary of the department
-
-// Total salary Where average salary is the summation of salaries for all employees in each department divided by the number of the employees in that department and total salary is the summation of salaries for all employees in each department.
-// Add a table footer which will have the total number of employees, the average salary for all departments and the total salary for all departments, as shown below.
-     
-
-        //  countsal+=employeesFromLS[i].sal;
-        //   let avg1=countsal/employeesFromLS.length;
-
-
-        // let totsal =tableCell.textContent = `${countsal}`;
-        // tableCell.innerHtml=totsal ;
-
-
-        // let avgsal =tableCell.textContent = `${avg1}`;
-        // tableCell.innerHtml=avgsal ;
-
-
-       
-
-
-
-
-        
-        
 
     }
 
